@@ -1,80 +1,14 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      width: 100%;
-      height: 100vh;
-      background: #000;
-    }
-    #root {
-      width: 100%;
-      height: 100%;
-      min-height: 300px;
-      min-width: 400px;
-      position: relative;
-    }
-    .pixel-cat {
-      position: fixed;
-      left: 50%;
-      bottom: 100px;
-      width: 48px;
-      height: 48px;
-      cursor: pointer;
-      z-index: 1000;
-      image-rendering: pixelated;
-      transform: translateX(-50%);
-      will-change: transform;
-    }
-    .cat-sprite {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      pointer-events: none;
-      image-rendering: pixelated;
-    }
-    .facing-left .cat-sprite {
-      transform: scaleX(-1);
-    }
-    .treats-count {
-      position: absolute;
-      top: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 14px;
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 2px 6px;
-      border-radius: 10px;
-      white-space: nowrap;
-      pointer-events: none;
-    }
-    .pixel-cat::after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 10%;
-      width: 80%;
-      height: 10px;
-      background: rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
-      filter: blur(3px);
-      pointer-events: none;
-    }
-  </style>
-</head>
-<body>
-  <div id="root"></div>
-  <script src="pixel-cat.js"></script>
-  <script>
-    const root = document.getElementById('root');
-    if (root) {
-      PixelCat.init(root);
-    }
-  </script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+    <script type="module" crossorigin src="./assets/index-XI-9XBpv.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DaMdS37S.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
